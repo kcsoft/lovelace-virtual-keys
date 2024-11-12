@@ -19,9 +19,9 @@ You need to install [HACS](https://hacs.xyz/) first.
 
 1. Install the [Virtual Keys](https://github.com/kcsoft/virtual-keys) integration.
 
-2. Add "Custom repositories" to HACS, paste the URL of this repository and select "Plugin" as category.
+2. Add "Custom repositories" to HACS, paste the URL of this repository and select "Dashboard"/"Plugin" as category.
 
-3. Go to HACS -> Integrations, Explore and Download Repositories, search for "virtual keys" and install it.
+3. Go to HACS -> Integrations, Explore and Download Repositories, search for "lovelace virtual keys" and install it.
 
 4. Add the following to `configuration.yaml`:
 
@@ -32,7 +32,7 @@ panel_custom:
     url_path: virtual-keys
     sidebar_title: Virtual Keys
     sidebar_icon: mdi:key-variant
-    module_url: /local/community/virtual-keys/virtual-keys.js
+    module_url: /local/community/lovelace-virtual-keys/virtual-keys.js
 ```
 
 6. Restart Home Assistant.

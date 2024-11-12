@@ -99,7 +99,7 @@ class VirtualKeysPanel extends LitElement {
     this.expireMinutes = Math.max(0, diffInMins)  + '';
     this.expireDate = e.detail.value;
   }
-  
+
   toggleExpire() {
     this.useExpireMinutes = !this.useExpireMinutes;
   }
@@ -177,7 +177,7 @@ class VirtualKeysPanel extends LitElement {
   }
 
   getLoginUrl(token) {
-    return this.hass.hassUrl() + 'local/community/virtual-keys/login.html?token=' + token.jwt_token;
+    return this.hass.hassUrl() + 'local/community/lovelace-virtual-keys/login.html?token=' + token.jwt_token;
   }
 
   listItemClick(e, token) {
